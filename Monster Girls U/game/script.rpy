@@ -3,8 +3,11 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
-
+define centaur = Character("Cindy")
+init:
+    image special_background:
+        "space_bg.jpg"
+        zoom 2.5
 
 # The game starts here.
 
@@ -14,19 +17,19 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene special_background
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
-    show eileen happy
+    show cindy_test
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    centaur "Howdy newcomer, welcome to the campus."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    centaur "I'm the first character ever made for this project, forget about that there hussy wolf bitch."
 
     # This ends the game.
 
